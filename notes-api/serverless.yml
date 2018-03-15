@@ -10,7 +10,7 @@ custom:
 
 provider:
   name: aws
-  runtime: nodejs8.9
+  runtime: nodejs6.10
   stage: prod
   region: us-east-1
 
@@ -74,5 +74,16 @@ functions:
       - http:
           path: notes/{id}
           method: put
+          cors: true
+          authorizer: aws_iam
+
+  # Defines an HTTP API endpoint that calls the main function in delete.js
+  # - path: url path is /notes/{id} # - method: DELETE request
+  delete:
+    handler: delete.main
+    events:
+      - http:
+          path: notes/{id}
+          method: delete
           cors: true
           authorizer: aws_iam
