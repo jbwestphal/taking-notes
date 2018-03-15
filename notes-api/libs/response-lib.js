@@ -1,5 +1,4 @@
-// libs response fucntions
-
+// libs response functions
 export function success(body) {
   return buildResponse(200, body);
 }
