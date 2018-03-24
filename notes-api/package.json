@@ -1,12 +1,12 @@
 {
   "name": "notes-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "handler.js",
+  "description": "An application for create and storage notes.",
+  "main": "list.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["aws", "react", "aws lambda", "aws dynamo", "aws cognito", "aws s3", "create-react-app"],
   "author": "Jessica Westphal",
   "license": "ISC",
   "devDependencies": {
