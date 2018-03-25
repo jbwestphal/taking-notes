@@ -35,6 +35,7 @@ build/Release
 # Dependency directories
 node_modules/
 notes-api/node_modules/
+notes-app-client/node_modules/
 jspm_packages/
 notes-api/jspm_packages
 
@@ -61,4 +62,12 @@ typings/
 
 # dotenv environment variables file
 .env
+notes-app-client/.env.local
+notes-app-client/.env.development.local
+notes-app-client/.env.test.local
+notes-app-client/.env.production.local
+
+notes-app-client/npm-debug.log*
+notes-app-client/yarn-debug.log*
+notes-app-client/yarn-error.log*
 
